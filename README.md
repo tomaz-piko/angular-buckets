@@ -12,6 +12,6 @@ Run `npm i` from repository folder
 
 With two seperate terminals
 
-Run `ng serve` for a dev server (client) running at `http://localhost:4200/` by default.
+Run `ng serve` for a dev server (client) running at `http://localhost:4200` by default.
 
 Run `npm run server` for json server running at `http://localhost:3000` by default.
