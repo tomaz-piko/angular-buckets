@@ -1,0 +1,28 @@
+<div class="bg-white p-3">
+  <div class="d-flex justify-content-between mb-4">
+    <h3>All buckets ({{ buckets.length }})</h3>
+    <button
+      class="btn btn-primary"
+      (click)="toggleCreateBucket()"
+      *ngIf="showCreateBucketButton"
+    >
+      Create New Bucket
+    </button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bucket of buckets">
+        <td>
+          <a [routerLink]="['/bucket', bucket.id]">{{ bucket.name }}</a>
+        </td>
+        <td>{{ bucket.location }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+Create New Bucket
+<form action="#" class="bg-white p-3">
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nameInput">Bucket Name*</label>
+      <input
+        class="form-control"
+        type="text"
+        name="name"
+        [(ngModel)]="name"
+        required
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="locationSelect">Bucket Location*</label>
+      <select class="form-select" name="location" [(ngModel)]="location">
+        <option value="Kranj">Kranj</option>
+        <option value="Ljubljana">Ljubljana</option>
+        <option value="Maribor">Maribor</option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <ngb-alert *ngIf="alertMessage" type="danger" (closed)="alertMessage = ''"
+      >{{ alertMessage }}
+    </ngb-alert>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onSubmit($event)">
+    Create Bucket
+  </button>
+</form>

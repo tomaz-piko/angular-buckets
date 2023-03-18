@@ -1,0 +1,38 @@
+{
+  "buckets": [
+    {
+      "name": "Test",
+      "location": "Ljubljana",
+      "files": [],
+      "id": 1
+    },
+    {
+      "name": "Storage",
+      "location": "Kranj",
+      "files": [],
+      "id": 2
+    },
+    {
+      "name": "Lets learn django",
+      "location": "Maribor",
+      "files": [],
+      "id": 3
+    }
+  ],
+  "files": [
+    {
+      "name": "Screenshot_1.png",
+      "last_modified": 1678308817717,
+      "size": 625092,
+      "bucketId": 1,
+      "id": 1
+    },
+    {
+      "name": "zupa.png",
+      "last_modified": 1678190107178,
+      "size": 440701,
+      "bucketId": 1,
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.my-nav-item {
+  padding: 16px 24px 16px 6px;
+  font-size: 20px;
+}
+
+.my-nav-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(92, 140, 156);
+}

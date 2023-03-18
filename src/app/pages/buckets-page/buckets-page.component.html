@@ -1,0 +1,7 @@
+<h1>Bucket list</h1>
+<app-create-bucket
+  *ngIf="showCreateBucket"
+  (onAddBucket)="addBucket($event)"
+></app-create-bucket>
+<br />
+<app-buckets-list [buckets]="buckets"></app-buckets-list>
